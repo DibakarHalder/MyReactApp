@@ -6,6 +6,7 @@ import createSagaMiddleware from 'redux-saga';
 import { all, fork } from 'redux-saga/effects';
 import counter from './Counter/reducer'
 import { counterSaga } from './Counter/saga'
+import Clock from './Clock'
 
 const rootReducer = { counter }
 const combinedReducer = combineReducers(rootReducer)

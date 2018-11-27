@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import * as actions from './actions'
 import { connect } from 'react-redux';
+import Clock from '../Clock'
 
 class Counter extends Component {
     render() {
         return (
             <div>
+
+                <Clock />
                 <h1>My React-Redux Counter App</h1>
                 <button onClick={this.props.onIncrementAsync}>
                     asyn inc 1sec
